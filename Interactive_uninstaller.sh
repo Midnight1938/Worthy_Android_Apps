@@ -218,9 +218,10 @@ case $input in
   adb shell pm uninstall -k --user 0 com.miui.hybrid.accessory 	        # Quick apps
   adb shell pm uninstall -k --user 0 com.miui.global.packageinstaller 	# MIUI package installer. Without it Play Store app will be used.
   adb shell pm uninstall -k --user 0 com.xiaomi.joyose                   # Some junk
- 
+ echo ''
+ echo ''
   echo 'Some additional steps to disable Xiaomi ads and collecting data:'
- 
+  echo ''
   echo ' ⚙️ Settings - Passwords & Security - Authorization & revocation. Revoke authorization from msa(MIUI System Ads) application. Not necessary we already disabled com.miui.msa.global.'
   echo ' ⚙️ Settings - Passwords & Security - Privacy. Disable “User Experience Program” and “Send diagnostic data automatically”.'
   echo ' ⚙️ Settings - Passwords & Security - Privacy - Ad services. Disable “Personalized ad recommendations”.'
