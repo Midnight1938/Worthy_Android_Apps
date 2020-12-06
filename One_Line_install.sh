@@ -64,7 +64,7 @@ case $input in
  adb install Sesame\ 3.6.3.apk
  echo ''
  echo '###   Installing Ymusic  ###'
- adb install Tor_Browser*.apk
+ adb install Tor_Browser.apk
  echo ''
  echo '###   Installing Ymusic  ###'
  adb install Apps/4134_ymusic*.apk
@@ -115,7 +115,7 @@ case $input in
 		 echo ''
        echo '###   Installing Raio & Whicon Icon Pack  ###'
    
-       adb install Apps/Ratio*.apk
+       adb install Apps/Ratio.apk
        adb install Apps/Whicons*.apk
        		;;
     *)
