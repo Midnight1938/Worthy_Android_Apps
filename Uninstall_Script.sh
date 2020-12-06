@@ -1,4 +1,4 @@
-
+#!/bin/sh
 #! Google
 adb shell pm uninstall -k --user 0 com.google.android.gm
 adb shell pm uninstall -k --user 0 com.google.android.apps.docs
