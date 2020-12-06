@@ -1,3 +1,4 @@
+#!/bin/sh
 sudo apt install adb
 echo ''
 echo '#####################'
