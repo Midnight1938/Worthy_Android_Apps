@@ -12,7 +12,7 @@ adb shell pm uninstall -k --user 0 com.google.android.gms.location.history # His
 adb shell pm uninstall -k --user 0 com.google.android.videos 	            # Google Movies
 adb shell pm uninstall -k --user 0 com.google.android.music 	            # Google Music
 adb shell pm uninstall -k --user 0 com.google.android.youtube 	            # Youtube
-adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon 	    # Google Duo - video calling app
+adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon 	    # Google Duo - video  calling app
 adb shell pm uninstall -k --user 0 com.google.ar.lens 	                    # Google Lens - identify things on camera
 adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox # Google search box
 adb shell pm uninstall -k --user 0 com.google.android.apps.googleassistant # Google Assistant
