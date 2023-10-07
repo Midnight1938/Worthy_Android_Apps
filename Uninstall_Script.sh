@@ -1,7 +1,10 @@
 #!/bin/sh
 #! Google
 adb shell pm uninstall -k --user 0 com.google.android.gm
-adb shell pm uninstall -k --user 0 com.google.android.apps.docs
+adb shell pm uninstall -k --user 0 com.google.android.apps.docs.editors.docs
+adb shell pm uninstall -k --user 0 com.google.android.apps.docs.editors.sheets
+adb shell pm uninstall -k --user 0 com.google.android.apps.docs.editors.slides
+adb shell pm uninstall -k --user 0 com.google.android.calendar
 adb shell pm uninstall -k --user 0 com.android.chrome
 adb shell pm uninstall -k --user 0 com.google.android.apps.photos
 adb shell pm uninstall -k --user 0 com.google.android.talk
@@ -9,6 +12,7 @@ adb shell pm uninstall -k --user 0 com.google.android.apps.books
 adb shell pm uninstall -k --user 0 com.google.android.apps.magazines
 adb shell pm uninstall -k --user 0 com.google.android.apps.plus
 adb shell pm uninstall -k --user 0 com.google.android.gms.location.history # History
+adb shell pm uninstall -k --user 0 com.google.android.apps.messaging
 adb shell pm uninstall -k --user 0 com.google.android.videos 	            # Google Movies
 adb shell pm uninstall -k --user 0 com.google.android.music 	            # Google Music
 adb shell pm uninstall -k --user 0 com.google.android.youtube 	            # Youtube
@@ -23,6 +27,7 @@ adb shell pm uninstall -k --user 0 com.skype.raider
 adb shell pm uninstall -k --user 0 com.microsoft.office.excel
 adb shell pm uninstall -k --user 0 com.microsoft.office.word
 adb shell pm uninstall -k --user 0 com.microsoft.office.powerpoint
+adb shell pm uninstall -k --user 0 com.linkedin.android
 
 #! got a fresh phone?
 #! Didn’t install any Facebook apps? 
@@ -172,9 +177,3 @@ adb shell pm uninstall -k --user 0 com.miui.hybrid
 adb shell pm uninstall -k --user 0 com.miui.hybrid.accessory 	        # Quick apps
 adb shell pm uninstall -k --user 0 com.miui.global.packageinstaller 	# MIUI package installer. Without it Play Store app will be used.
 adb shell pm uninstall -k --user 0 com.xiaomi.joyose                   # Some junk
-
-echo 'Some additional steps to disable Xiaomi ads and collecting data:'
-
-echo ' ⚙️ Settings - Passwords & Security - Authorization & revocation. Revoke authorization from msa(MIUI System Ads) application. Not necessary if you already disabled com.miui.msa.global.'
-echo ' ⚙️ Settings - Passwords & Security - Privacy. Disable “User Experience Program” and “Send diagnostic data automatically”.'
-echo ' ⚙️ Settings - Passwords & Security - Privacy - Ad services. Disable “Personalized ad recommendations”.'
